@@ -1,6 +1,6 @@
 # IoTgo (Game of Internet of Things)
 
-IoTgo or the Game of Internet of Things is a tangible board game to help end-users with no experience of creating interactive IoT-enabled smart things.
+IoTgo or the Game of Internet of Things is a tangible card-based toolkits to help end-users with no experience of creating interactive IoT-enabled smart things.
 
 ![Alt text](images/promo-image.png?raw=true)
 
