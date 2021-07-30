@@ -5,7 +5,7 @@ urlis="https://makecode.microbit.org/--docs?md=%0A%0A%60%60%60%20blocks%0Abasic.
 
 cardWidth=100
 pluscardwidht=100
-missionCardWidth=120
+missionCardWidth=160
 vertiPaddingWidth=35
 
 # st.markdown("""""")
