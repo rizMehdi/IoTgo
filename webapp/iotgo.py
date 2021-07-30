@@ -55,7 +55,7 @@ with code_col:
     components.iframe(urlis,width=700, height=1500, scrolling=True)
 
 with emptycol5:
-    st.button("Refresh (r)")
+    st.button("Refresh")
 with emptycol6:
     st.image("https://raw.githubusercontent.com/rizMehdi/IoTgo/main/images/blankcard.png", width=32)
-    st.markdown("[Edit/Download]("+urlis+")", unsafe_allow_html=True)
+    st.markdown("[Edit]("+urlis+")", unsafe_allow_html=True)
