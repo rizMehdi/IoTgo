@@ -12,7 +12,7 @@ vertiPaddingWidth=35
 applogo, empty1, empty2, mission, persona, empty3, thing, empty4,empty5  = st.beta_columns(9)
 
 with applogo:
-    st.image("http://raw.githubusercontent.com/rizMehdi/IoTgo/main/images/applogo3.png",width=250)
+    st.image("http://raw.githubusercontent.com/rizMehdi/IoTgo/main/images/applogo3.png",width=350)
 with mission:
     st.image("https://raw.githubusercontent.com/rizMehdi/IoTgo/main/images/cards/EN-mission-7.png", width=missionCardWidth)
 with persona:
