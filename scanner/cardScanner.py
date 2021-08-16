@@ -9,7 +9,6 @@ from digitalio import DigitalInOut
 from adafruit_pn532.spi import PN532_SPI
 from adafruit_pn532.adafruit_pn532 import MIFARE_CMD_AUTH_B
 from time import sleep
-##from sense_hat import SenseHat from flask import Flask import threading, webbrowser
 import random
 import csv
 import os
