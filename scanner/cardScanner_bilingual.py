@@ -21,7 +21,7 @@ import csv
 import time
 import textwrap
 from github3 import login
-import configc
+import config
 import github3
 
 #language selection variables:
@@ -648,11 +648,7 @@ def updatePyFile(mission_name, persona_name, thing_name,input_name, output_name,
     editText= {'EN':'Edit','IT':'Modificare','DE':'Edit','UR':'Edit karain',}
     codeisText= {'EN':'My code is:','IT':'Il mio codice è:','DE':'My code is:','UR':'Mera code hey:',}
 
-    
-    print(temp_path)
-    gitloadpath="http://raw.githubusercontent.com/rizMehdi/IoTgo/main/images/"
-    with open(temp_path, 'w') as f:    
-        f.write(textwrap.dedent('''\
+    pyfilecontents=textwrap.dedent('''\
             #this file was updated on '''+time.ctime()+'''
             import streamlit as st
             import streamlit.components.v1 as components
@@ -714,7 +710,12 @@ def updatePyFile(mission_name, persona_name, thing_name,input_name, output_name,
 
 
             st.button("Refresh")
-            '''))        
+            ''')
+
+    print(temp_path)
+    gitloadpath="http://raw.githubusercontent.com/rizMehdi/IoTgo/main/images/"
+    with open(temp_path, 'w') as f:    
+        f.write(pyfilecontents)        
     print('local-py file updated.')
     print('git-py file-updated on '+time.ctime())
     repo.file_contents(gitfilepath).update('file-updated on '+time.ctime(),pyfilecontents.encode('utf-8') ) #repo.file_contents(gitfilepath).update('commit message', 'file contentwww'.encode('utf-8'))
